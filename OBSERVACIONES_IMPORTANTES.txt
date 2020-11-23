@@ -1,0 +1,8 @@
+MODIFICAR 'config/filesystems.php'
+
+	REEMPLAZAR:	'default' => env('FILESYSTEM_DRIVER', 'local'),
+    	CON:		'default' => env('FILESYSTEM_DRIVER', 'public'),
+
+EJECUTAR EN EL DIRECTORIO DEL PROYECTO
+
+	'php artisan storage:link' 
